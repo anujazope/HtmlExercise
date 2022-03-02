@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #e2e2e2;
+        }
+
+        header{
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 35px;
+            color: black;
+        }
+        nav{
+            float: right;
+            width: 30%;
+            height: 300px;
+            padding: 30px;
+            background-color: aliceblue;
+        }
+        #horizontal-list{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #horizontal-list li{
+            display: inline;
+        }
+        #logo{
+            display: inline;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+        }
+       
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="logo">192.168.1.1</h2>
+
+        <ul id="horizontal-list">
+            <a href="#"><li>Find your router IP</li></a>
+            <a href="#"><li>Router Brands</li></a>
+            <a href="#"><li>Username and Password</li></a>
+            <a href="#"><li>Manuals</li></a>
+            <a href="#"><li>Login IPs</li></a>
+        </ul>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <a href=""><li>192.168.1.1</li></a>
+                <a href=""><li>192.168.0.1</li></a>
+                <a href=""><li>192.168.10.1</li></a>
+                <a href=""><li>192.168.2.1</li></a>
+                <a href=""><li>10.0.0.1</li></a>
+                <a href=""><li>192.168.1.0</li></a>
+                <a href=""><li>192.168.1.254</li></a>
+            </ul>
+        </nav>
+        <article>
+            <h2>192.168.0.1 Default Router IP Login</h2>
+            <p>It's default login IP that is reserved for modems or wireless routers. By typing 192.168.0.1 (NOT 192.168.o.1) in the address bar of your browser you will get access to the admin interface of your router.</p>
+            <p>192.168.0.1 is mostly used by brands like D-Link, Netgear or TP-LINK . It's not the only standard IP for routers. There are dozens of different IPs like 192.168.1.1, 192.168.2.1 or 192.168.1.254 that were used to access your wireless router, Cable Gateway or DSL Wireless Router control panel. Such a standard IP is also called Default Gateway IP.</p>
+        </article>
+    </section>
+    <footer>
+        <h3>Footer</h3>
+        <p>If you are not sure whether the address 192.168.0.1 is really the default address of the router, you can check this using the input console. To do this, open the start menu of your computer. If you are working with Windows Vista or Windows 7, you can already see the search field. In Windows XP you must first click on the “Run” entry in the Start menu. Now enter “cmd” in the field. A new window will open in which you have to enter the command “ipconfig”.</p>
+    </footer>
+</body>
+</html>
